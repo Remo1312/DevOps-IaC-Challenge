@@ -23,5 +23,5 @@ jobs:
     - name: Terraform Apply
       run: terraform apply -auto-approve
 
-      - name: Cleanup
+    - name: Cleanup
       run: terraform destroy -auto-approve
