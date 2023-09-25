@@ -24,6 +24,8 @@ jobs:
 
     - name: Terraform Apply
       run: terraform apply -auto-approve
+      working-directory: airflow/terraform
+
 
     - name: Cleanup
       run: terraform destroy -auto-approve
